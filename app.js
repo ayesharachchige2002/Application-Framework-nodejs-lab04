@@ -1,6 +1,3 @@
-const fs = require('fs');
+const myModule = require('./my-module.js');
 
-fs.readFile('file.txt', 'utf8', function (err, data) {
-  if (err) throw err;
-  console.log(data);
-});
+console.log(myModule.myFunction());
